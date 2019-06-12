@@ -14,26 +14,31 @@ function eventsDisplay(){
     }).then(function(response){
         console.log(response)
         $("#events-display").empty();
-        for (var i=0; i < 10; i++) {
-            var eventDiv= $("<div class='eventDiv'>");
-            var imageURL = response.events.event[i].image.url;
-            var image = $("<img>");
-            image.attr("src", imageURL);
-            eventDiv.append(image);
+         console.log(response.events.event.length)
 
-            var eventName = $("<div>");
-            eventName.html("Event title: "+ response.events.event[i].title);
-            $("#events-display").append(eventName); 
+        for (var i=0; i < response.events.event.length; i++) {
+           
+                var eventDiv= $("<div class='eventDiv'>");
+                var imageURL = response.events.event[i].image.medium.url;
+                var image = $("<img>");
+                image.attr("src", imageURL);
+                eventDiv.append(image);
+                $("#events-display").append( eventDiv); 
+                var eventName = $("<div>");
+                eventName.html("Event title: "+ response.events.event[i].title);
+                $("#events-display").append(eventName); 
+        
+                var venueAddress = $("<div>");
+                    venueAddress.html("Address: "+ response.events.event[i].venue_address);
+                    $("#events-display").append(venueAddress);
     
-            var venueAddress = $("<div>");
-                venueAddress.html("Address: "+ response.events.event[i].venue_address )
-                $("#events-display").append(venueAddress);
-
-                var dateAndTime = $("<div>");
-                dateAndTime.html("Date and Time "+ response.events.event[i].start_time)
-
-                $("#events-display").append(dateAndTime);
-
+                    var dateAndTime = $("<div>");
+                    dateAndTime.html("Date and Time "+ response.events.event[i].start_time);
+    
+                    $("#events-display").append(dateAndTime);
+    
+            
+           
         }
 
         
