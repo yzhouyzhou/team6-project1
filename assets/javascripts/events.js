@@ -1,13 +1,43 @@
-$("events-display").text("Things To Do!")
+$("#events-display").text("Things To Do!")
 function eventsDisplay(){
- 
+    var keyword = "concert";
     var events = $(this).attr("data-name");
-    var queryURL = "https://cors-anywhere.herokuapp.com/" + "http://api.eventful.com/json/events/search?app_key=QXvwcxm7wz44KSFD&location=chicago&date=This+Week"
+
+    var queryURL = "https://cors-anywhere.herokuapp.com/https://api.eventful.com/json/events/search?app_key=QXvwcxm7wz44KSFD&location=chicago&keywords=" + keyword + "&date=This+Week&"
     $.ajax({
         url: queryURL,
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        dataType: "json",
         method: "GET"
     }).then(function(response){
-       console.log(response) 
+        console.log(response)
+        $("#events-display").empty();
+        for (var i=0; i < 10; i++) {
+            var eventDiv= $("<div class='eventDiv'>");
+            var imageURL = response.events.event[i].image.url;
+            var image = $("<img>");
+            image.attr("src", imageURL);
+            eventDiv.append(image);
+
+            var eventName = $("<div>");
+            eventName.html("Event title: "+ response.events.event[i].title);
+            $("#events-display").append(eventName); 
+    
+            var venueAddress = $("<div>");
+                venueAddress.html("Address: "+ response.events.event[i].venue_address )
+                $("#events-display").append(venueAddress);
+
+                var dateAndTime = $("<div>");
+                dateAndTime.html("Date and Time "+ response.events.event[i].start_time)
+
+                $("#events-display").append(dateAndTime);
+
+        }
+
+        
+
     })
 }
 eventsDisplay();
