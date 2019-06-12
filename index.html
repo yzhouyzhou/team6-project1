@@ -1,33 +1,269 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Bootstrap File -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Bootstrap File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+             
 </head>
 
 <body>
-    <div class="container text-center">
-            <h1>HELLO GUYS</h1>
-            <div id="weather-display"></div>
-            <div id="restaurants-display"></div>
-            <div id="events-display"></div>
-            <div id="reccs-display"></div>
-            <div id="locals-display"></div>
-        
+  <div class="container text-center">
+
+    <!-- Main Logo -->
+    <div class="jumbotron">
+      <h1 class="display-4">What's Up, Chicago?</h1>
+      <p class="lead"> <i>Welcome to the greatest city on the planet</i></p>
+      <br>
+    </div>
+    <img src="../team6-project1/assets/images/pngkey.com-chicago-skyline-silhouette-png-491320.png" alt="Skyline">
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-sm-12" id="newsletter-411">
+        <a href="./newsletter.html" class="btn btn-secondary btn-lg btn-block" role="button" aria-pressed="true"
+          class="fa fa-send">Sign up for our newsletter</a> </div>
+    </div>
+    <br>
+    <!-- Weather Display Div -->
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card mb-3">
+          <img src="../team6-project1/assets/images/chicago-1804479_1920.jpg" class="card-img-top" alt="..."
+            style="height: 15rem;">
+          <div class="card-body">
+            <h3 class="card-title">Weather</h3>
+            <p class="card-text"><i>"My ideal date is April 25th because it's not too hot, not too cold. All you need is a
+                light jacket."</i></p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <a href="https://weather.com/" class="btn btn-outline-info" role="button" aria-pressed="true">See more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body" id="weather-display">
+            This is where the weather will display.
+          </div>
+        </div>
+      </div>
     </div>
 
+    <!-- Restaurants Display Div -->
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card mb-3">
+          <img src="../team6-project1/assets/images/pizza-3007395_1920.jpg" class="card-img-top" alt="..."
+            style="height: 15rem;">
+          <div class="card-body">
+            <h3 class="card-title">Restaurants</h3>
+            <p class="card-text">Search for your favorite kinds of food</p>
+            <a href="https://resy.com/?date=2019-06-11&seats=2" class="btn btn-outline-danger" role="button"
+              aria-pressed="true">Resy</a>
+            <a href="https://www.opentable.com/chicago-restaurants?ref=12913&SP=ppc_g_us_tm&LS=gglppc&MID=us_tm&gclid=Cj0KCQjwov3nBRDFARIsANgsdoE7R_qkJBkrTV8BYMEP_luo6-ls5RemP_5a0uNpg543AjnVAYkFGNEaAgQSEALw_wcB&gclsrc=aw.ds"
+              class="btn btn-outline-danger" role="button" aria-pressed="true">Opentable</a>
 
-      <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="./assets/javascripts/events.js"> </script>
-    <script src="./assets/javascripts/restaurants.js"> </script>
-    <script src="./assets/javascripts/weather.js"> </script>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body" id="restaurants-display">
+            This is where the restaurants will display.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="../team6-project1/assets/images/olive-oil-1412361_1920.jpg">
+              <span class="card-title">This week's featured restaurant</span>
+              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">+</i></a>
+            </div>
+            <div class="card-content">
+              <p><strong>Aba Chicago</strong> is a Mediterranean restaurant with a rooftop patio located in Chicago’s historic Fulton Market District. Aba incorporates a <strong>light style of cooking with a large emphasis on raw and cooked protein and showcases rare Mediterranean-inspired wines and spirits.</strong></p>
+              <br>
+              <a href="http://www.abarestaurantchicago.com/"
+              class="btn btn-outline-danger" role="button" aria-pressed="true">See more</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Sports Display Div -->
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card mb-3">
+          <img src="../team6-project1/assets/images/cubs.jpg" class="card-img-top" alt="..." style="height: 15rem;">
+          <div class="card-body">
+            <h3 class="card-title">Sports</h3>
+            <!-- <p class="card-text">Catch a game</p> -->
+            <a href="https://seatgeek.com/mlb-tickets" class="btn btn-outline-warning" id="sports-btn" role="button"
+              aria-pressed="true">Buy Tickets</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body" id="sports-display">
+            This is where the sports will display.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Concerts Display Div -->
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card mb-3">
+          <img src="../team6-project1/assets/images/concerts-1150042_1920.jpg" class="card-img-top" alt="..."
+            style="height: 15rem;">
+          <div class="card-body">
+            <h3 class="card-title">Concerts</h3>
+            <!-- <p class="card-text">See what's poppin'</p> -->
+            <a href="https://seatgeek.com/concert-tickets" class="btn btn-outline-warning" id="concert-btn" role="button"
+              aria-pressed="true">Buy Tickets</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body" id="concerts-display">
+            This is where the concerts will display.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Theatre Display Div -->
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card mb-3">
+          <img src="../team6-project1/assets/images/chicago-1775878_1920.jpg" class="card-img-top" alt="..."
+            style="height: 15rem;">
+          <div class="card-body">
+            <h3 class="card-title">Theatre + Shows</h3>
+            <!-- <p class="card-text">See a show</p> -->
+            <a href="https://seatgeek.com/broadway-tickets" class="btn btn-outline-warning" id="shows-btn" role="button"
+              aria-pressed="true">Buy Tickets</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body" id="shows-display">
+            This is where the shows will display.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Comedy Display Div -->
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card mb-3">
+          <img src="../team6-project1/assets/images/audio-1851517_1920.jpg" class="card-img-top" alt="..."
+            style="height: 15rem;">
+          <div class="card-body">
+            <h3 class="card-title">Comedy</h3>
+            <!-- <p class="card-text">Laugh with us</p> -->
+            <a href="https://seatgeek.com/comedy-tickets" class="btn btn-outline-warning" id="comedy-btn" role="button"
+              aria-pressed="true">Buy Tickets</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body" id="comedy-display">
+            This is where the comedy shows will display.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Recommendations Display Div -->
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card mb-3">
+          <img src="../team6-project1/assets/images/chicago1.jpg" class="card-img-top" alt="..." style="height: 15rem;">
+          <div class="card-body" id="reccs-display">
+            <h3 class="card-title">Our Recommendations</h3>
+            <!-- <p class="card-text">Our Reccs</p> -->
+            <a href="https://seatgeek.com/comedy-tickets" class="btn btn-outline-primary" role="button"
+              aria-pressed="true">See More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Locals Display Div -->
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card mb-3">
+          <img src="../team6-project1/assets/images/books-1163695_1920.jpg" class="card-img-top" alt="..."
+            style="height: 15rem;">
+          <div class="card-body" id="locals-display">
+            <h3 class="card-title">Local Finds</h3>
+            <!-- <p class="card-text">Our Reccs</p> -->
+            <a href="https://seatgeek.com/comedy-tickets" class="btn btn-outline-success" role="button"
+              aria-pressed="true">See More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="weather-display"></div>
+    <div id="restaurants-display"></div>
+    <div id="events-display"></div>
+    <div id="reccs-display"></div>
+    <div id="locals-display"></div>
+
+  </div>
+
+  <footer class="page-footer text-center">
+      Copyright © 2019
+      <br>
+      What's Up, Chicago?
+      <br>
+      <br>
+      <div class="footer-copyright">
+          <br>
+        <div class="container">
+        <a class="grey-text text-lighten-4 center" href="./newsletter.html">Newsletter</a>
+        </div>
+      </div>
+    </footer>
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="./assets/javascripts/events.js"> </script>
+  <script src="./assets/javascripts/restaurants.js"> </script>
+  <script src="./assets/javascripts/weather.js"> </script>
+  <script src="assets/javascripts/newsletter.js"></script>
 </body>
+
 </html>
