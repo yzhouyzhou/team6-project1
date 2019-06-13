@@ -11,12 +11,11 @@ btn.attr("latitude-value", "41.8781");
 btn.attr("longitude-value", "-87.6298");
 $("#location-display").append(btn);
 
-function initMap() {
+function initMap(){
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,
         center: { lat: latitude, lng: longitude }
     });
-    
     marker = new google.maps.Marker({
         map: map,
         draggable: true,
@@ -38,8 +37,7 @@ function initMap() {
             animation: google.maps.Animation.DROP,
             position: { lat: latitude, lng: longitude }
         });
-        
-    })
+    });
 }
 
 function toggleBounce() {
