@@ -1,12 +1,12 @@
-// creating a queryURL and a proxy for our variable
-var queryURL = "https://api.darksky.net/forecast/50e96906f2f88a696fc32c4b3f40607d/41.85003,-87.65005"
+          // creating a queryURL and a proxy for our variable
+var queryURL = "https://api.darksky.net/forecast/50e96906f2f88a696fc32c4b3f40607d/41.85003,%20-87.65005"
 var proxy = 'https://cors-anywhere.herokuapp.com/'
 var weather=$("<div>");
 // then we use the ajax function to retrive our data
 $.ajax({
   url: proxy + queryURL,
   headers: {
-    'Content-Type': 'application/x-www-form-urlencoded' 
+    'Content-Type': 'application/x-www-form-urlencoded'
     // 'origin': 'x-requested-with'
   },
   dataType: "json",
