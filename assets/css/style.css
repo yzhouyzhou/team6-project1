@@ -1,6 +1,4 @@
-body {
-    background: beige;
-}
+
 
 img {
     width: 400px;
@@ -15,3 +13,7 @@ body {
   main {
     flex: 1 0 auto;
   }
+  #calendar {
+    width: 50px;
+  }
+  
