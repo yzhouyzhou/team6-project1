@@ -1,4 +1,3 @@
-
 // The following example creates a marker in Stockholm, Sweden using a DROP
 // animation. Clicking on the marker will toggle the animation between a BOUNCE
 // animation and no animation.
@@ -10,6 +9,14 @@ btn.html("Location");
 btn.attr("latitude-value", "41.8781");
 btn.attr("longitude-value", "-87.6298");
 $("#location-display").append(btn);
+
+function toggleBounce() {
+    if (marker.getAnimation() !== null) {
+        marker.setAnimation(null);
+    } else {
+        marker.setAnimation(google.maps.Animation.BOUNCE);
+    }
+}
 
 function initMap(){
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -38,12 +45,4 @@ function initMap(){
             position: { lat: latitude, lng: longitude }
         });
     });
-}
-
-function toggleBounce() {
-    if (marker.getAnimation() !== null) {
-        marker.setAnimation(null);
-    } else {
-        marker.setAnimation(google.maps.Animation.BOUNCE);
-    }
 }
