@@ -42,7 +42,7 @@ $.ajax({
           <p class="humidity">Humidity: ${response.currently.humidity} % </p>
           <p class="summary"> Summary:  ${response.currently.summary}</p>
           <P class="precipProbality">Precipitation-Probality:  ${response.currently.precipProbability} </P>
-          <P class="precipType">Precipitation-Type:  ${response.currently.precipType} </P>
+          <P class="precipType">Precipitation-Type:  ${capitalize(response.currently.precipType)} </P>
 
         </p>
       </div>
