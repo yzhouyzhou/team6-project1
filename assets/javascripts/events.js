@@ -1,9 +1,15 @@
 
 $(".eventButton").on("click", function () {
+<<<<<<< HEAD
     // option #1
     var keyword = $(this).attr("data-subject")
     // option #2
     // var keyword = $(this).data("subject")
+=======
+
+    var keyword = $(this).attr("data-subject")
+
+>>>>>>> 09fa3ed8fe53fc969ffd1e45171a822b7496e39e
 
     function eventsDisplay() {
 
@@ -43,8 +49,13 @@ $(".eventButton").on("click", function () {
                 var dateAndTime = $("<div>");
                 dateAndTime.html(response.events.event[i].start_time);
                 eventDiv.append(dateAndTime);
+<<<<<<< HEAD
 
 
+=======
+
+
+>>>>>>> 09fa3ed8fe53fc969ffd1e45171a822b7496e39e
                 $("#events-display").append(eventDiv);
 
                 var btn = $("<button>");
@@ -55,6 +66,7 @@ $(".eventButton").on("click", function () {
                 // btn.attr("href",eventURL)
                 btn.text("See more");
                 eventDiv.append(btn);
+<<<<<<< HEAD
 
                 $("#events-display").append(eventDiv);
                 // btn.on("click", function (){
@@ -65,7 +77,11 @@ $(".eventButton").on("click", function () {
                 //     console.log(response.events.event[i].url)
                 //     window.open(response.events.event[i].url);
                 // })
+=======
+>>>>>>> 09fa3ed8fe53fc969ffd1e45171a822b7496e39e
 
+                $("#events-display").append(eventDiv);
+         
             }
 
 
