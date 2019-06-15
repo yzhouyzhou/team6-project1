@@ -42,7 +42,6 @@ main {
     border: 15px solid #ee6e73;
 }
 
-<<<<<<< HEAD
 .dropdown-button {
   width: 50%;
   display: block;
@@ -55,7 +54,6 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
-=======
 .eventDiv {
   padding: 20px;
     position: relative; 
@@ -86,4 +84,3 @@ main {
      height: 100px;
      width: 100px;
  }
->>>>>>> master
