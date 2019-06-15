@@ -1,7 +1,8 @@
 
-$(".card-title").on("click", function () {
+$(".eventButton").on("click", function () {
+
     var keyword = $(this).attr("data-subject")
-   
+
 
     function eventsDisplay() {
 
@@ -27,27 +28,35 @@ $(".card-title").on("click", function () {
                 eventDiv.append(image);
                 $("#events-display").append(eventDiv);
                 var eventName = $("<div>");
-                eventName.html("Event title: " + response.events.event[i].title);
-                $("#events-display").append(eventName);
+                eventName.html(response.events.event[i].title);
+                eventDiv.append(eventName);
+
+                $("#events-display").append(eventDiv);
 
                 var venueAddress = $("<div>");
-                venueAddress.html("Address: " + response.events.event[i].venue_address);
-                $("#events-display").append(venueAddress);
+                venueAddress.html(response.events.event[i].venue_address);
+                eventDiv.append(venueAddress);
+
+                $("#events-display").append(eventDiv);
 
                 var dateAndTime = $("<div>");
-                dateAndTime.html("Date and Time " + response.events.event[i].start_time);
+                dateAndTime.html(response.events.event[i].start_time);
+                eventDiv.append(dateAndTime);
 
-                $("#events-display").append(dateAndTime);
+
+                $("#events-display").append(eventDiv);
 
                 var btn = $("<button>");
                 btn.addClass("event-btn");
                 var eventURL = response.events.event[i].url;
                 console.log(eventURL);
                 btn.attr("onClick", `parent.location="${eventURL}"`)
-                btn.text("Information");
-                $("#events-display").append(btn);
-           
+                // btn.attr("href",eventURL)
+                btn.text("See more");
+                eventDiv.append(btn);
 
+                $("#events-display").append(eventDiv);
+         
             }
 
 
