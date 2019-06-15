@@ -33,7 +33,7 @@ $.ajax({
 //  create an if statement
   if (response.currently.precipType){
     Precipitation= capitalize(response.currently.precipType)
-  } else { Precipitation = "None"}
+  } else { Precipitation = "Clear"}
 
  // Transfer content to HTML
   $("#weather-displayed").html(
