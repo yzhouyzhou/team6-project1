@@ -41,3 +41,43 @@ main {
     width: auto;
     border: 15px solid #ee6e73;
 }
+
+.eventDiv {
+  padding: 20px;
+    position: relative; 
+    height: 300px;
+    width: 230px;
+    float: left;
+  display: block;
+  z-index: 999;
+  text-align: center;
+  
+  }
+
+
+ .event-btn {
+     background-color: lightseagreen;
+     border-radius: 4px;
+     padding: 5px;
+     color: whitesmoke;
+     font-weight: bold;
+ }
+
+<<<<<<< HEAD
+
+
+ .eventDiv img {
+=======
+ .imageDiv img {
+>>>>>>> 09fa3ed8fe53fc969ffd1e45171a822b7496e39e
+     height: 100px;
+     width: 100px;
+ }
+
+<<<<<<< HEAD
+=======
+ .eventDiv img {
+     height: 100px;
+     width: 100px;
+ }
+>>>>>>> 09fa3ed8fe53fc969ffd1e45171a822b7496e39e
