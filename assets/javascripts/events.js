@@ -1,4 +1,3 @@
-$("#events-display").text("Things To Do!")
 
 $(".card-title").on("click", function () {
     var keyword = $(this).attr("data-subject")

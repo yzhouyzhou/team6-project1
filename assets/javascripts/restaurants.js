@@ -23,6 +23,7 @@ $("#restaurant-submit-btn").on("click", function (e) {
         dataType: "json",
         method: "GET"
     }).then(function (response) {
+        console.log(response);
         console.log("response: ", response);
         console.log("response.businesses.length: ", response.businesses.length)
 
