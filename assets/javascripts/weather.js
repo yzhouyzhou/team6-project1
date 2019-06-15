@@ -21,7 +21,7 @@ $.ajax({
   // Log the resulting object
   console.log(response);
 
-  
+  //  create an function to capitalize the first letter
   function capitalize(string) {
     let [firstLetter, ...rest] = string;
 
@@ -29,9 +29,13 @@ $.ajax({
     return newWord;
   }
 
+  var Precipitation;
+//  create an if statement
+  if (response.currently.precipType){
+    Precipitation= capitalize(response.currently.precipType)
+  } else { Precipitation = "None"}
 
-  // Transfer content to HTML
-
+ // Transfer content to HTML
   $("#weather-displayed").html(
     `<div class="card"> 
       <h5 class="card-header city">  Chicago Weather &#x26C5 </h5>
@@ -42,10 +46,10 @@ $.ajax({
           <p class="humidity">Humidity: ${response.currently.humidity} % </p>
           <p class="summary"> Summary:  ${response.currently.summary}</p>
           <P class="precipProbality">Precipitation-Probality:  ${response.currently.precipProbability} </P>
-          <P class="precipType">Precipitation-Type:  ${capitalize(response.currently.precipType)} </P>
+          <P class="precipType">Precipitation-Type: ${Precipitation} </P>
 
         </p>
-      </div>
+      </div> 
     </div>`
   )
 })
