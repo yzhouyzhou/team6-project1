@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<link rel="stylesheet" href="./assets/css/style.css">
+ </head>
+
+<body> 
+    <!-- CODE RETRIEVED FROM: https://www.jquery-az.com/materialize/demo.php?ex=54.0_5 -->
+<div class="container">
+<!-- <h3>Materialize Carousel Demo</h3> -->
+<div class="carousel carousel-slider" id="demo-carousel-content" data-indicators="true" >
+
+  <a class="carousel-item" href="#one!"><img src="./assets/images/chicago1.jpg"></a>
+   
+   
+   <div class="carousel-fixed-item center">
+     <h2 class="white-text">What's Up, Chicago?</h2>
+     <p class="white-text lead"> <i>Welcome to the greatest city on the planet</i></p>
+    </div>
+
+    
+    <a class="carousel-item" href="#two!"><img src="./assets/images/chicago-1804479_1920.jpg">
+      </a>
+   <a class="carousel-item" href="#two!"><img src="./assets/images/chicago.jpg">
+      </a>
+      <a class="carousel-item" href="#four!"><img src="./assets/images/index5.jpg">
+      </a>
+      <a class="carousel-item" href="#five!"><img src="./assets/images/index2.jpg">
+      </a>
+      <a class="carousel-item" href="#six!"><img src="./assets/images/index3.jpg">
+      </a>
+
+
+  </div>
+  <br>
+  <br>
+  <img src="../team6-project1/assets/images/pngkey.com-chicago-skyline-silhouette-png-491320.png" alt="Skyline">
+      
+</div>
+<br>
+<div class="row">
+        <div class="col-sm-12" id="whatsup-main">
+          <a href="./index.html" class="btn waves-effect orange lighten-3 black-text darken-text-2" role="button" aria-pressed="true"
+            >Let's Explore Chi-City</a> </div>
+      </div>
+
+<br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <footer class="page-footer">
+                Copyright © 2019 
+                <br>
+                <a class="grey-text text-lighten-4 center" href="./index.html">What's Up, Chicago?</a>
+                <br>
+                <br>
+                <div class="footer-copyright">
+                  <div class="container" id="newsletterfooter">
+                  <a class="grey-text text-lighten-4 center" href="./newsletter.html">Newsletter</a>
+                  </div>
+                </div>
+              </footer>
+
+
+    
+<script>
+$(document).ready(function(){
+ $('#demo-carousel-content').carousel();
+  setInterval(function() {
+    $('#demo-carousel-content').carousel('next');
+  }, 3000);    
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true
+  });
+        
+});
+</script>
+</body>   
+</html>
+
