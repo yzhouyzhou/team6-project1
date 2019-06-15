@@ -1,19 +1,43 @@
-
+body {
+  background-image: linear-gradient(to bottom right, #c6ffdd, #fbd786,  #f7797d);
+}
 
 img {
     width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
-  main {
-    flex: 1 0 auto;
-  }
+main {
+  flex: 1 0 auto;
+}
+    
   #calendar {
     width: 50px;
   }
   
+  /* #reserve {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  } */
+
+  #whatsup-main {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer {
+    text-align: center;
+  }
+.linebreak{
+    width: auto;
+    border: 15px solid #ee6e73;
+}

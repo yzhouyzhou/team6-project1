@@ -2,62 +2,31 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>MAIN INDEX</title>
-  <!-- Bootstrap File -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MAIN INDEX</title>
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
 
 <body>
-  <div class="container text-center">
-    <!-- Main Logo -->
-    <div class="jumbotron">
-      <h1 class="display-4">What's Up, Chicago?</h1>
-      <p class="lead"> <i>Welcome to the greatest city on the planet</i></p>
-      <br>
-    </div>
-    <img src="../team6-project1/assets/images/pngkey.com-chicago-skyline-silhouette-png-491320.png" alt="Skyline">
-    <br>
-    <br>
-    <div class="row">
-      <div class="col-sm-12" id="newsletter-411">
-        <a href="./newsletter.html" class="btn btn-secondary btn-lg btn-block" role="button" aria-pressed="true"
-          class="fa fa-send">Sign up for our newsletter</a> </div>
-    </div>
-    <br>
-    <!-- Weather Display Div -->
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="card mb-3">
-          <img src="../team6-project1/assets/images/chicago-1804479_1920.jpg" class="card-img-top" alt="..."
-            style="height: 15rem;">
-          <div class="card-body">
-            <h3 class="card-title">Weather</h3>
+    <div class="container">
+        <div class="carousel carousel-slider" id="demo-carousel-content" data-indicators="true">
 
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            <a href="https://weather.com/" class="btn btn-outline-info" role="button" aria-pressed="true">See
-              more</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body" id="weather-displayed">
-            This is where the weather will display.
-          </div>
-        </div>
+            <a class="carousel-item" href="#one!"><img src="./assets/images/chicago1.jpg"></a>
 
-      </div>
-    </div>
-
+<<<<<<< HEAD
     <!-- Restaurants Display Div -->
     <div class="row">
       <div class="col-sm-6">
@@ -85,194 +54,403 @@
           </div>
         </div>
       </div>
+=======
+>>>>>>> master
 
-    </div>
-    <div class="row">
-      <div class="col s12 m6">
-        <div class="card">
-          <div class="card-image">
-            <img src="../team6-project1/assets/images/olive-oil-1412361_1920.jpg">
-            <span class="card-title">This week's featured restaurant</span>
-            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">+</i></a>
-          </div>
-          <div class="card-content">
-            <p><strong>Aba Chicago</strong> is a Mediterranean restaurant with a rooftop patio located in Chicago’s
-              historic Fulton Market District. Aba incorporates a <strong>light style of cooking with a large emphasis
-                on raw and cooked protein and showcases rare Mediterranean-inspired wines and spirits.</strong></p>
-            <br>
-            <a href="http://www.abarestaurantchicago.com/" class="btn btn-outline-danger" role="button"
-              aria-pressed="true">Explore Aba</a>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Sports Display Div -->
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="card mb-3">
-          <img src="../team6-project1/assets/images/cubs.jpg" class="card-img-top" alt="..." style="height: 15rem;">
-          <div class="card-body">
-            <h3 class="card-title">Sports</h3>
-            <!-- <p class="card-text">Catch a game</p> -->
-            <a href="" class="btn btn-outline-warning" id="sports-btn" role="button" aria-pressed="true">See More</a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body" id="sportss-display">
-            This is where the sports will display.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Concerts Display Div -->
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="card mb-3">
-          <img src="../team6-project1/assets/images/concerts-1150042_1920.jpg" class="card-img-top" alt="..."
-            style="height: 15rem;">
-          <div class="card-body">
-            <h3 class="card-title">Concerts</h3>
-            <!-- <p class="card-text">See what's poppin'</p> -->
-            <a href="" class="btn btn-outline-warning" id="concert-btn" role="button" aria-pressed="true">See More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body" id="concerts-display">
-            This is where the concerts will display.
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Theatre Display Div -->
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="card mb-3">
-          <img src="../team6-project1/assets/images/chicago-1775878_1920.jpg" class="card-img-top" alt="..."
-            style="height: 15rem;">
-          <div class="card-body">
-            <h3 class="card-title">Theatre + Shows</h3>
-            <!-- <p class="card-text">See a show</p> -->
-            <a href="" class="btn btn-outline-warning" id="shows-btn" role="button" aria-pressed="true">See More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body" id="shows-display">
-            This is where the shows will display.
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-
-    <!-- Comedy Display Div -->
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="card mb-3">
-          <img src="../team6-project1/assets/images/audio-1851517_1920.jpg" class="card-img-top" alt="..."
-            style="height: 15rem;">
-          <div class="card-body">
-            <h3 class="card-title">Comedy</h3>
-            <!-- <p class="card-text">Laugh with us</p> -->
-            <a href="https://seatgeek.com/comedy-tickets" class="btn btn-outline-warning" id="comedy-btn" role="button"
-              aria-pressed="true">Buy Tickets</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body" id="comedy-display">
-            This is where the comedy shows will display.
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Locals Display Div -->
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="card mb-3">
-          <img src="../team6-project1/assets/images/books-1163695_1920.jpg" class="card-img-top" alt="..."
-            style="height: 15rem;">
-          <div class="card-body" id="locals-display">
-            <h3 class="card-title">Local Finds</h3>
-            <!-- <p class="card-text">Our Reccs</p> -->
-
-            <a href="https://seatgeek.com/comedy-tickets" class="btn btn-outline-success" role="button"
-              aria-pressed="true">See More</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="card mb-3">
-          <div class="card-body" id="calendar-display">
-            <h3 class="card-title">Chicago Summer Calendar <img
-                src="../team6-project1/assets/images/Calendar-PNG-Picture.png" id="calendar"></h3>
-
-            <div id="Container" style="padding-bottom:56.25%; position:relative; display:block; width: 100%">
-              <iframe id="GoogleCalendar" width="100%" height="100%"
-                src="https://calendar.google.com/calendar/embed?src=chicagosummercalendar@gmail.com" frameborder="0"
-                allowfullscreen="" style="position:absolute; top:0; left: 0"></iframe>
+            <div class="carousel-fixed-item center">
+                <h2 class="white-text">What's Up, Chicago?</h2>
+                <p class="white-text lead"> <i>Don't get too crazy.</i></p>
+                <br>
             </div>
-            <br>
-            <p class="card-text"><small class="text-muted">Add events to your Google Calendar</small></p>
-            <a href="https://calendar.google.com/calendar/r?cid=chicagosummercalendar@gmail.com"
-              class="btn btn-outline-success" role="button" aria-pressed="true">Add</a>
-          </div>
+
+            <a class="carousel-item" href="#two!"><img src="./assets/images/index7.jpg">
+            </a>
+            <a class="carousel-item" href="#three!"><img src="./assets/images/index3.jpg">
+            </a>
+            <a class="carousel-item" href="#four!"><img src="./assets/images/index4.jpg">
+            </a>
+            <a class="carousel-item" href="#five!"><img src="./assets/images/index5.jpg">
+            </a>
+
         </div>
-      </div>
+
 
     </div>
 
-  </div>
-  <div id="weather-display"></div>
-  <div id="restaurants-display"></div>
-  <div id="events-display"></div>
-  <div id="reccs-display"></div>
-  <div id="locals-display"></div>
+    <div class="container text-center">
+        <!-- Main Logo -->
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-sm-12" id="newsletter-411">
+                <a href="./newsletter.html" class="btn btn-secondary btn-lg btn-block" role="button" aria-pressed="true"
+                    class="fa fa-send">Sign up for our newsletter</a> </div>
+        </div>
 
-  <footer class="page-footer text-center">
-    Copyright © 2019
-    <br>
-    What's Up, Chicago?
-    <br>
-    <br>
-    <div class="footer-copyright">
-      <br>
-      <div class="container">
-        <a class="grey-text text-lighten-4 center" href="./newsletter.html">Newsletter</a>
-      </div>
+        <img src="../team6-project1/assets/images/pngkey.com-chicago-skyline-silhouette-png-491320.png" alt="Skyline">
+        <br>
+        <br>
+        <!-- Weather Display Div -->
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card mb-3">
+                    <img src="../team6-project1/assets/images/chicago-1804479_1920.jpg" class="card-img-top" alt="..."
+                        style="height: 15rem;">
+                    <div class="card-body">
+                        <h3 class="card-title">Weather</h3>
+
+                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        <a href="https://weather.com/" class="btn btn-outline-info" role="button"
+                            aria-pressed="true">See
+                            more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body" id="weather-displayed">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class=linebreak></div>
+        <br>
+        <!-- Restaurants Display Div -->
+        <div class="row">
+            <div class="col-sm-6" id="reserve">
+                <div class="card mb-3">
+                    <img src="../team6-project1/assets/images/pizza-3007395_1920.jpg" class="card-img-top" alt="..."
+                        style="height: 15rem;">
+                    <div class="card-body">
+                        <h3 class="card-title">Restaurants</h3>
+                        <p class="card-text">Know where you want to go? Reserve your table now.</p>
+                        <a href="https://resy.com/?date=2019-06-11&seats=2" class="btn btn-outline-danger" role="button"
+                            aria-pressed="true">Resy</a>
+                        <a href="https://www.opentable.com/chicago-restaurants?ref=12913&SP=ppc_g_us_tm&LS=gglppc&MID=us_tm&gclid=Cj0KCQjwov3nBRDFARIsANgsdoE7R_qkJBkrTV8BYMEP_luo6-ls5RemP_5a0uNpg543AjnVAYkFGNEaAgQSEALw_wcB&gclsrc=aw.ds"
+                            class="btn btn-outline-danger" role="button" aria-pressed="true">Opentable</a>
+                    </div>
+                </div>
+                <br>
+                <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Still deciding?</h3>
+                            <p class="card-text">We got you. Use our search engine below.</p>
+                            <img src="../team6-project1/assets/images/double-down-arrow-861727.png" class="card-img-top" alt="..."
+                            style="width: 110px">
+    
+                        </div>
+                    </div>
+
+            </div>
+
+            <div class="col-sm-6" id="reccs">
+                <div class="card mb-3">
+                    <img src="../team6-project1/assets/images/taco2.jpg" class="card-img-top" alt="..."
+                        style="height: 15rem;">
+                    <div class="card-body">
+                        <h3 class="card-title">Foodie Find Fridays: <i>Tacos</i></h3>
+                        <p class="card-text">Our team's top picks for the week. We like our food.</p>
+                        <a href="http://www.antiquetaco.com/" class="btn btn-outline-danger btn-sm" role="button"
+                            aria-pressed="true">Antique Taco</a>
+                        <br>
+                        <br>
+
+                        <a href="https://www.barriochicago.com/?utm_source=local&utm_medium=organic&utm_campaign=gmb"
+                            class="btn btn-outline-danger btn-sm" role="button" aria-pressed="true">Barrio</a>
+                        <br>
+                        <br>
+
+                        <a href="http://bartakito.com/" class="btn btn-outline-danger btn-sm" role="button"
+                            aria-pressed="true">Bar Takito</a>
+                        <br>
+                        <br>
+                        <a href="http://www.carnitasuruapanchi.com/" class="btn btn-outline-danger btn-sm" role="button"
+                            aria-pressed="true">Carnitas Uruapan</a>
+                        <br>
+                        <br>
+                        <a href=" https://www.rickbayless.com/restaurants/cerveceria-cruz-blanca/" class="btn btn-outline-danger btn-sm" role="button"
+                            aria-pressed="true">Cruz Blanca</a>
+                        <br>
+                        <br>
+
+                        <a href="https://velvettaco.com/" class="btn btn-outline-danger btn-sm" role="button"
+                            aria-pressed="true">Velvet Tacos</a>
+
+                           
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RESTAURANTS - DISPLAY -->
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body" id="restaurants-display">
+                        <i>Let's help you find a spot</i>
+                        <form id="food-form">
+                            <label for="food-input">Search cuisine here:</label>
+
+                            <input type="text" id="food-input"><br>
+                            <br>
+                            <input class="btn-outline-info btn" id="restaurant-submit-btn" type="submit"
+                                value="Boom, baby!">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- STATIC - THIS WEEK'S FEATURED RESTAURANT -->
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../team6-project1/assets/images/aba.jpg">
+                        <span class="card-title">This week's featured restaurant</span>
+                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i
+                                class="material-icons"></i></a>
+                    </div>
+                    <div class="card-content">
+                        <p><strong>Aba Chicago</strong> is a Mediterranean restaurant with a rooftop patio located in
+                            Chicago’s
+                            historic Fulton Market District. Aba incorporates a <strong>light style of cooking with a
+                                large emphasis
+                                on raw and cooked protein and showcases rare Mediterranean-inspired wines and
+                                spirits.</strong></p>
+                        <br>
+                        <a href="http://www.abarestaurantchicago.com/" class="btn btn-outline-danger" role="button"
+                            aria-pressed="true">Explore Aba</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=linebreak></div>
+        <br>
+
+        <!-- EVENTS -->
+        <div class="row">
+                <div class="col sm-3">
+                  <div class="card mb-3">
+                    <img src="../team6-project1/assets/images/cubs.jpg" class="card-img-top" alt="..." style="height: 10rem;">
+                    <div class="card-body">
+                      <button type="button" class="btn btn-info eventButton" data-subject="sport">Sports</button>           
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                      <div class="card mb-3">
+                        <img src="../team6-project1/assets/images/concerts-1150042_1920.jpg" class="card-img-top" alt="..."
+                          style="height: 10rem;">
+                        <div class="card-body">
+                          <button type="button" class="btn btn-info eventButton" data-subject="concert">Concerts</button>           
+                          <!-- <p class="card-text">See what's poppin'</p> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                          <div class="card mb-3">
+                            <img src="../team6-project1/assets/images/chicago-1775878_1920.jpg" class="card-img-top" alt="..."
+                              style="height: 10rem;">
+                            <div class="card-body">
+                              <button type="button" class="btn btn-info eventButton" data-subject="show">Shows</button>           
+                              <!-- <p class="card-text">See a show</p> -->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                              <div class="card mb-3">
+                                <img src="../team6-project1/assets/images/audio-1851517_1920.jpg" class="card-img-top" alt="..."
+                                  style="height: 10rem;">
+                                <div class="card-body">
+                                  <button type="button" class="btn btn-info eventButton" data-subject="comedy">Comedy</button>           
+                                  <!-- <p class="card-text">Laugh with us</p> -->
+                                </div>
+                              </div>
+                            </div>
+              </div>
+              <!-- EVENTS Display Div -->
+          <div class="row">
+                  <div class="col-sm-12">
+                          <div class="card">
+                              <div class="card-body" id="events-display">
+                  
+                              </div>
+                          </div>
+                      </div>
+          </div>
+
+        <div class=linebreak></div>
+        <br>
+
+        <!-- Locals Display Div -->
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card mb-3">
+                    <img src="../team6-project1/assets/images/books-1163695_1920.jpg" class="card-img-top" alt="..."
+                        style="height: 16rem;">
+                    <div class="card-body" id="locals-display">
+                        <h3 class="card-title">Local Finds + Events</h3>
+                        <p class="card-text">Just a few spaces and places we have accumulated. You're welcome.</p>
+    
+                                            <p class="card-text"><small class="text-muted">Updated every month. Always swing by.</small></p>
+                                            <br>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                    <div class="card mb-3">
+                            <h3 class="card-title">Check us out, babies.</h3>
+                            <br>
+                            <div class="dropdown-button">
+                                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Breweries
+                                    </a>
+                                  
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                      <a class="dropdown-item" href="#">Action</a>
+                                      <a class="dropdown-item" href="#">Another action</a>
+                                      <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                  </div>
+                                  <br>
+                                  <div class="dropdown-button">
+                                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Bookstores
+                                        </a>
+                                      
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <a class="dropdown-item" href="#">Action</a>
+                                          <a class="dropdown-item" href="#">Another action</a>
+                                          <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                      </div>
+                                      <br>
+                                  <div class="dropdown-button">
+                                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Coffee Shops
+                                        </a>
+                                      
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <a class="dropdown-item" href="#">Action</a>
+                                          <a class="dropdown-item" href="#">Another action</a>
+                                          <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                      </div>
+                                      <br>
+                                      <div class="dropdown-button">
+                                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Donuts
+                                            </a>
+                                        
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                              <a class="dropdown-item" href="#">Action</a>
+                                              <a class="dropdown-item" href="#">Another action</a>
+                                              <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                          </div>
+                                          <br>
+                                  <div class="dropdown-button">
+                                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Floral Shops
+                                        </a>
+                                      
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <a class="dropdown-item" href="#">Action</a>
+                                          <a class="dropdown-item" href="#">Another action</a>
+                                          <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                      </div>
+                                      <br>
+
+                                      
+                             <!-- Dropdown Trigger -->
+  <a class='dropdown-button btn waves-effect orange lighten-3 black-text darken-text-2' href='#' data-activates='dropdown1'>Drop Me!</a>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">three</a></li>
+    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+  </ul>
+                                      <br>
+                                 
+                                      <p class="card-text"><small class="text-muted">June 2019 Picks</small></p>
+<br>
+                    </div>
+                </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card mb-3">
+                    <div class="card-body" id="calendar-display">
+                        <h3 class="card-title">Chicago Summer Calendar <img
+                                src="../team6-project1/assets/images/Calendar-PNG-Picture.png" id="calendar"></h3>
+
+                        <div id="Container"
+                            style="padding-bottom:56.25%; position:relative; display:block; width: 100%">
+                            <iframe id="GoogleCalendar" width="100%" height="100%"
+                                src="https://calendar.google.com/calendar/embed?src=chicagosummercalendar@gmail.com"
+                                frameborder="0" allowfullscreen="" style="position:absolute; top:0; left: 0"></iframe>
+                        </div>
+                        <br>
+                        <p class="card-text"><small class="text-muted">Add events to your Google Calendar</small></p>
+                        <a href="https://calendar.google.com/calendar/r?cid=chicagosummercalendar@gmail.com"
+                            class="btn btn-outline-success" role="button" aria-pressed="true">Add</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
-  </footer>
+    <div id="weather-display"></div>
+    <div id="restaurants-display"></div>
+    <div id="events-display"></div>
+    <div id="reccs-display"></div>
+    <div id="locals-display"></div>
 
-  <!-- JQuery -->
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="./assets/javascripts/events.js"> </script>
-  <script src="./assets/javascripts/restaurants.js"> </script>
-  <script src="./assets/javascripts/weather.js"> </script>
-  <script src="assets/javascripts/newsletter.js"></script>
-  <script src="assets/javascripts/index.js"></script>
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- FOOTER -->
+    <footer class="page-footer text-center">
+        Copyright © 2019
+        <br>
+        <a class="grey-text text-lighten-4 center" href="./mainscreen.html">What's Up, Chicago?</a>
+        <br>
+        <br>
+        <div class="footer-copyright">
+            <br>
+            <div class="container">
+                <a class="grey-text text-lighten-4 center" href="./newsletter.html">Newsletter</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="./assets/javascripts/events.js"> </script>
+    <script src="./assets/javascripts/restaurants.js"> </script>
+    <script src="./assets/javascripts/weather.js"> </script>
+    <script src="assets/javascripts/newsletter.js"></script>
+    <script src="assets/javascripts/index.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
 </body>
 
