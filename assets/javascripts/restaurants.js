@@ -25,7 +25,6 @@ $("#restaurant-submit-btn").on("click", function (e) {
     }).then(function (response) {
         console.log("response: ", response);
         console.log("response.businesses.length: ", response.businesses.length)
-
         // loop circulates through the generated yelp array and pulls name, address, price, and url into table for display for 10 restaurants
 
         for (var i = 0; i < 10; i++) {
