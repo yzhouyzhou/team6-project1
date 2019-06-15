@@ -29,9 +29,17 @@ $("#restaurant-submit-btn").on("click", function (e) {
         // loop circulates through the generated yelp array and pulls name, address, price, and url into table for display for 10 restaurants
 
         for (var i = 0; i < 10; i++) {
+            var imageDiv = $("<div class='imageDiv'>");
+                var imageURL = response.businesses[i].image_url;
+                var image = $("<img>");
+                image.attr("src", imageURL);
+                imageDiv.append(image);
 
             // // Create the new row
             var newRow = $("<tr>").append(
+                
+                $("<td>").html(imageDiv),
+
                 $("<td>").text(response.businesses[i].name),
                 $("<td>").html(response.businesses[i].location.address1 + "<br>" + response.businesses[i].location.city + ", " + response.businesses[i].location.state + " " + response.businesses[i].location.zip_code),
                 $("<td>").text(response.businesses[i].price),

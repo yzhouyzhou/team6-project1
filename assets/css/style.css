@@ -42,6 +42,7 @@ main {
     border: 15px solid #ee6e73;
 }
 
+<<<<<<< HEAD
 .dropdown-button {
   width: 50%;
   display: block;
@@ -54,3 +55,35 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
+=======
+.eventDiv {
+  padding: 20px;
+    position: relative; 
+    height: 300px;
+    width: 230px;
+    float: left;
+  display: block;
+  z-index: 999;
+  text-align: center;
+  
+  }
+
+
+ .event-btn {
+     background-color: lightseagreen;
+     border-radius: 4px;
+     padding: 5px;
+     color: whitesmoke;
+     font-weight: bold;
+ }
+
+ .imageDiv img {
+     height: 100px;
+     width: 100px;
+ }
+
+ .eventDiv img {
+     height: 100px;
+     width: 100px;
+ }
+>>>>>>> master
