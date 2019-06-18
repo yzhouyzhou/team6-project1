@@ -20,15 +20,11 @@ main {
   flex: 1 0 auto;
 }
     
-  #calendar {
+  #calendar, #gps {
     width: 50px;
   }
   
-  /* #reserve {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  } */
+
 
   #whatsup-main {
     display: block;
