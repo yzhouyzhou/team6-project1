@@ -1,7 +1,7 @@
-          // creating a queryURL and a proxy for our variable
+// creating a queryURL and a proxy for our variable
 var queryURL = "https://api.darksky.net/forecast/50e96906f2f88a696fc32c4b3f40607d/41.85003,%20-87.65005"
 var proxy = 'https://cors-anywhere.herokuapp.com/'
-var weather=$("<div>");
+var weather = $("<div>");
 // then we use the ajax function to retrive our data
 $.ajax({
   url: proxy + queryURL,
@@ -30,12 +30,12 @@ $.ajax({
   }
 
   var Precipitation;
-//  create an if statement
-  if (response.currently.precipType){
-    Precipitation= capitalize(response.currently.precipType)
-  } else { Precipitation = "Clear"}
+  //  create an if statement
+  if (response.currently.precipType) {
+    Precipitation = capitalize(response.currently.precipType)
+  } else { Precipitation = "Clear" }
 
- // Transfer content to HTML
+  // Transfer content to HTML 
   $("#weather-displayed").html(
     `<div class="card"> 
       <h5 class="card-header city">  Chicago Weather &#x26C5 </h5>
