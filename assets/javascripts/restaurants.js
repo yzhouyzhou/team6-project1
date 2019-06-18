@@ -26,8 +26,13 @@ $("#restaurant-submit-btn").on("click", function (e) {
         console.log("response: ", response);
         console.log("response.businesses.length: ", response.businesses.length)
         // loop circulates through the generated yelp array and pulls name, address, price, and url into table for display for 10 restaurants
+        $("#restaurant-table > tbody").empty(); // clean the table before display
 
-        for (var i = 0; i < 10; i++) {
+        for (var i = 0; i < response.businesses.length; i++) {
+            // only display 10 items
+            if (i === 10) {
+                return;
+            }
             var imageDiv = $("<div class='imageDiv'>");
             var imageURL = response.businesses[i].image_url;
             var image = $("<img>");
@@ -46,7 +51,8 @@ $("#restaurant-submit-btn").on("click", function (e) {
             );
 
             // Append the new row to the table
-            $("#restaurant-table > tbody").prepend(newRow)
+            $("#restaurant-table > tbody").prepend(newRow);
+
         }
 
     });
