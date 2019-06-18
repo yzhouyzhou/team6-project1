@@ -29,30 +29,29 @@ $("#restaurant-submit-btn").on("click", function (e) {
 
         for (var i = 0; i < 10; i++) {
             var imageDiv = $("<div class='imageDiv'>");
-                var imageURL = response.businesses[i].image_url;
-                var image = $("<img>");
-                image.attr("src", imageURL);
-                imageDiv.append(image);
+            var imageURL = response.businesses[i].image_url;
+            var image = $("<img>");
+            image.attr("src", imageURL);
+            imageDiv.append(image);
 
             // // Create the new row
             var newRow = $("<tr>").append(
-                
+
                 $("<td>").html(imageDiv),
 
                 $("<td>").text(response.businesses[i].name),
                 $("<td>").html(response.businesses[i].location.address1 + "<br>" + response.businesses[i].location.city + ", " + response.businesses[i].location.state + " " + response.businesses[i].location.zip_code),
                 $("<td>").text(response.businesses[i].price),
-                $("<td>").html('<a href="' + response.businesses[i].url + '">' + "Link" + '</a>'),
+                $("<td>").html('<a href="' + response.businesses[i].url + '" class="btn btn-outline-danger">' + "More" + '</a>'),
             );
 
             // Append the new row to the table
-            $("#restaurant-table > tbody").append(newRow)
+            $("#restaurant-table > tbody").prepend(newRow)
         }
 
     });
 
-
-
 });
+
 
 
