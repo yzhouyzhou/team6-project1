@@ -20,7 +20,7 @@ main {
   flex: 1 0 auto;
 }
     
-  #calendar, #gps {
+  #calendar, #gps, #ball {
     width: 50px;
   }
   
