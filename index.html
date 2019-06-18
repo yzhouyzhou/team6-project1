@@ -166,31 +166,33 @@
                         <i>Let's help you find a spot</i>
                         <form id="food-form">
                             <label for="food-input">Search cuisine here:</label>
-
-                            <input type="text" id="restaurantInput"><br>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="restaurantInput"
+                                    placeholder="example: &quot;pizza&quot; ">
+                            </div>
+                            <br>
                             <br>
                             <input class="btn-outline-info btn" id="restaurant-submit-btn" type="submit"
                                 value="Boom, baby!">
                         </form>
-                         <!-- restaurant table that gets populated after user input -->
-                  <table class="table table-sm table-hover" id="restaurant-table">
-                        <thead>
-                            <tr class="text-center"><br>
-                                <th scope="col">Restaurant</th>
-                                <th scope="col">Address</th>
-                                <th scope="col">Price</th>
-                                <th scope="col">More Info</th>
-                                <th scope="col">Website</th>
-
-                            </tr>
-                         </thead>
-                        <tbody class="text-center" id="restaurant-rows">
-                          <tr id="restaurant-name-row"></tr>
-                          <tr id="restaurant-address-row"></tr>
-                          <tr id="restaurant-price-row"></tr>
-                          <tr id="restaurant-info-row"></tr>
-                        </tbody>
-                    </table>
+                        <!-- restaurant table that gets populated after user input -->
+                        <table class="table table-sm table-hover" id="restaurant-table">
+                            <thead>
+                                <tr class="text-center"><br>
+                                    <th scope="col"></th>
+                                    <th scope="col">Restaurant</th>
+                                    <th scope="col">Address</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center" id="restaurant-rows">
+                                <tr id="restaurant-name-row"></tr>
+                                <tr id="restaurant-address-row"></tr>
+                                <tr id="restaurant-price-row"></tr>
+                                <tr id="restaurant-info-row"></tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -198,6 +200,7 @@
         </div>
 
         <!-- STATIC - THIS WEEK'S FEATURED RESTAURANT -->
+
         <div class="row">
             <div class="col s12 m6">
                 <div class="card">
@@ -416,9 +419,9 @@
     </footer>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
+    <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#config-web-app -->
 
 
@@ -440,7 +443,7 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
     <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->
-    
+
 
 </body>
 
