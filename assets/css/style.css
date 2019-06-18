@@ -38,6 +38,12 @@ main {
     width: auto;
     border: 15px solid #ee6e73;
 }
+.eventofweek {
+  background: #ee6e73;
+  color: whitesmoke;
+  /* font-weight: bold; */
+  font-size: 24px;
+}
 
 .dropdown-button {
   width: 50%;
