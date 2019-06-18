@@ -42,3 +42,17 @@ var firebaseConfig = {
     $("#comments-input").val("");
   });
   
+  // to view amount of clicks on our page
+  database.ref('users').once('value').then(function(snapshot) {
+    var users = snapshot.val().users
+ // irrate the user each time we load the page
+    users++
+ 
+    database.ref("users").set({
+        users:users
+ 
+    })
+  });
+ 
+ 
+ console.log("user added")

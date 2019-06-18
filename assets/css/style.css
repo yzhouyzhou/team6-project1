@@ -1,5 +1,6 @@
+
 body {
-  background-image: linear-gradient(to bottom right, #c6ffdd, #fbd786,  #f7797d);
+  background-image: linear-gradient(to bottom right, #b3ddf2, white, #f7797d);
 }
 
 img {
@@ -49,7 +50,7 @@ main {
   margin-right: auto;
 }
 
-#dropdown1 {
+ul {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -84,3 +85,6 @@ main {
      height: 100px;
      width: 100px;
  }
+
+
+ 
