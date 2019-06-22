@@ -88,5 +88,15 @@ ul {
      width: 100px;
  }
 
+ @media screen and (max-width: 640px) {
+   .resBtn {
+     width: 20%;
+   }
+   
+.GoogleCalendar {
+  width: 50%;
+}
+
+ }
 
  
