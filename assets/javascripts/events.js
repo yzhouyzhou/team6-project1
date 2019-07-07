@@ -1,8 +1,7 @@
 
 $(".eventButton").on("click", function () {
 
-    var keyword = $(this).attr("data-subject")
-
+    var keyword = $(this).attr("data-subject");
 
     function eventsDisplay() {
 
@@ -59,23 +58,8 @@ $(".eventButton").on("click", function () {
          
             }
 
-
-
         })
     }
     eventsDisplay();
 
 })
-
-
-
-
-// function sportsdisplay () {
-//     keyword = sports;
-
-// $(document).on("click","#sports", eventsDisplay);
-
-// }
-
-
-
