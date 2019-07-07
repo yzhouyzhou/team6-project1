@@ -1,4 +1,4 @@
-# team6-project1  project1 for team6 - WHATS UP CHICAGO
+# team6-project1  -  WHATS UP CHICAGO
 *   What's Up Chicago PAGE (index.html)
 
 *   WELCOME PAGE (mainscreen.html)
