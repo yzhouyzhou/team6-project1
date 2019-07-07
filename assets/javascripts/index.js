@@ -1,10 +1,10 @@
-$(document).ready(function(){
+$(document).ready(function () {
   $('#demo-carousel-content').carousel();
-   setInterval(function() {
-     $('#demo-carousel-content').carousel('next');
-   }, 3000);    
-        
- });  
+  setInterval(function () {
+    $('#demo-carousel-content').carousel('next');
+  }, 3000);
+
+});
 
 //  $(".dropdown-button").dropdown({
 //   inDuration: 300,
@@ -17,5 +17,5 @@ $(document).ready(function(){
 //   stopPropagation: false // Stops event propagation
 // }
 // );
-    
+
 $('.dropdown-button').dropdown('open');
