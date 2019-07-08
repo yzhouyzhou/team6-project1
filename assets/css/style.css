@@ -95,3 +95,29 @@ ul {
     width: 50%;
   }
 }
+
+@media screen and (max-width: 530px) {
+  body{
+    width: 100%;
+  }
+  .resBtn {
+    width: 20%;
+  }
+  .GoogleCalendar {
+    width: 50%;
+  }
+  .imageDiv img {
+    height: 35px;
+    width: 35px;
+  }
+  tbody, th, td {
+    font-size: 7px;
+    margin:0px;
+    padding:0px;
+  }
+  #moreBtn {
+    font-size: 5px;
+    font-stretch: extra-expanded;
+    display: inline-block;
+  }
+}
