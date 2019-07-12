@@ -49,8 +49,7 @@ $(".eventButton").on("click", function () {
                 btn.addClass("event-btn");
                 var eventURL = response.events.event[i].url;
                 console.log(eventURL);
-                btn.attr("onClick", `parent.location="${eventURL}"`)
-                // btn.attr("href",eventURL)
+                btn.attr("onClick", `window.open("${eventURL}")`);
                 btn.text("See more");
                 eventDiv.append(btn);
 

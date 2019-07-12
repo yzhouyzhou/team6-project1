@@ -87,14 +87,6 @@ ul {
   width: 100px;
 }
 
-@media screen and (max-width: 740px) {
-  .resBtn {
-    width: 20%;
-  }
-  .GoogleCalendar {
-    width: 50%;
-  }
-}
 
 @media screen and (max-width: 530px) {
   body{
@@ -120,4 +112,6 @@ ul {
     font-stretch: extra-expanded;
     display: inline-block;
   }
+
+
 }
