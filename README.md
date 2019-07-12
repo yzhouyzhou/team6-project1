@@ -1,7 +1,7 @@
 # team6-project1  -  WHATS UP CHICAGO
 *   What's Up Chicago PAGE (index.html)
 
-*   WELCOME PAGE (mainscreen.html)
+*   WELCOME PAGE (index1.html)
 *       simple slideshow / welcome portion --> links to out main webpage/our footer links to the newsletter
 *       kept it simple before showcasing the main goods
 *       linked to firebase to view amount of clicks + users entering our site
