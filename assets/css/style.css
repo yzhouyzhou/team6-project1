@@ -1,5 +1,28 @@
 body {
-  background-image: linear-gradient(to bottom right, #b3ddf2, white, #f7797d);
+  /* background-image: linear-gradient(to bottom right, #b3ddf2, white, #f7797d); */
+  /* color: white; */
+        /* Location of the image */
+        background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255,255,255,.1)), url("../images/ikhsan-sugiarto-6CmfWqCNeIo-unsplash.jpg");
+        /* Background image is centered vertically and horizontally at all times */
+        background-position: center center;
+        /* Background image doesn't tile */
+        background-repeat: no-repeat;
+        /* Background image is fixed in the viewport so that it doesn't move when 
+           the content's height is greater than the image's height */
+        background-attachment: fixed;
+        /* This is what makes the background image rescale based
+           on the container's size */
+        background-size: cover;
+        /* Set a background color that will be displayed
+           while the background image is loading */
+        background-color: #464646;
+        transition: 1s opacity;
+}
+
+.full-width-div {
+  position: absolute;
+  width: 100%;
+  left: 0;
 }
 
 img {
@@ -35,7 +58,7 @@ footer {
 
 .linebreak {
   width: auto;
-  border: 15px solid #ee6e73;
+  border: 15px solid #313fb9;
 }
 
 .eventofweek {
