@@ -20,7 +20,8 @@ function initMap() {
     var markers = locations.map(function (location, i) {
         return new google.maps.Marker({
             position: location,
-            label: labels[i % labels.length]
+            label: labels[i % labels.length],
+            title: tooltips[i]
         });
     });
 
@@ -39,3 +40,5 @@ var locations = [
     { lat: 41.891710, lng: -87.609660 }, // navy pier
     { lat: 42.0449188, lng: -87.6808331 }, //600 Emerson Evanston  
 ]
+var tooltips = ["Willis Tower", "Arts Institute", "Chicago Theatre", "House of Blue", "Millennium Park",
+    "Navy Pier", "Emerson"];
