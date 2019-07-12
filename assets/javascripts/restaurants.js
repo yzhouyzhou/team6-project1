@@ -47,7 +47,7 @@ $("#restaurant-submit-btn").on("click", function (e) {
                 $("<td>").html(response.businesses[i].name),
                 $("<td>").html(response.businesses[i].location.address1 + "<br>" + response.businesses[i].location.city + ", " + response.businesses[i].location.state + " " + response.businesses[i].location.zip_code),
                 $("<td>").html(response.businesses[i].price),
-                $("<td>").html('<a href="' + response.businesses[i].url + '" class="btn btn-outline-danger resBtn" id="moreBtn">' + "More" + '</a>'),
+                $("<td>").html('<a href="' + response.businesses[i].url + '" class="btn btn-outline-danger resBtn" target="_blank" id="moreBtn">' + "More" + '</a>'),
             );
 
             // Append the new row to the table

@@ -44,7 +44,7 @@ $.ajax({
           <p class="temperature">  &#x1f321 Temperature: ${response.currently.temperature} °F</p>
           <p class="wind">Wind Speed:  ${response.currently.windSpeed} mph </p>
           <p class="humidity">Humidity: ${response.currently.humidity} % </p>
-          <p class="summary"> Summary:  ${response.currently.summary}</p>
+          <p class="summary"> Summary: ${response.currently.summary}</p>
           <P class="precipProbality">Precipitation-Probality:  ${response.currently.precipProbability} </P>
           <P class="precipType">Precipitation-Type: ${Precipitation} </P>
 
