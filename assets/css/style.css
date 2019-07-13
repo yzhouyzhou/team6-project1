@@ -81,6 +81,17 @@ ul {
   margin-right: auto;
 }
 
+.event-block{
+  min-width: 180px;
+  margin:0,3;
+  position: relative;
+  float: left;
+}
+
+/* #eventButton{
+  position: absolute;
+} */
+
 .eventDiv {
   padding: 20px;
   position: relative;
@@ -111,14 +122,11 @@ ul {
 }
 
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 575px) {
   body{
     width: 100%;
   }
   .resBtn {
-    width: 20%;
-  }
-  .eventButton {
     width: 20%;
   }
   .GoogleCalendar {
