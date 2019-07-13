@@ -1,22 +1,22 @@
 body {
   /* background-image: linear-gradient(to bottom right, #b3ddf2, white, #f7797d); */
   /* color: white; */
-        /* Location of the image */
-        background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255,255,255,.1)), url("../images/wall-2093277_1920.jpg");
-        /* Background image is centered vertically and horizontally at all times */
-        background-position: center center;
-        /* Background image doesn't tile */
-        background-repeat: no-repeat;
-        /* Background image is fixed in the viewport so that it doesn't move when 
+  /* Location of the image */
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, .1)), url("../images/wall-2093277_1920.jpg");
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  /* Background image is fixed in the viewport so that it doesn't move when 
            the content's height is greater than the image's height */
-        background-attachment: fixed;
-        /* This is what makes the background image rescale based
+  background-attachment: fixed;
+  /* This is what makes the background image rescale based
            on the container's size */
-        background-size: cover;
-        /* Set a background color that will be displayed
+  background-size: cover;
+  /* Set a background color that will be displayed
            while the background image is loading */
-        background-color: #464646;
-        transition: 1s opacity;
+  background-color: #464646;
+  transition: 1s opacity;
 }
 
 .full-width-div {
@@ -36,6 +36,10 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+}
+
+.full-width-div {
+  margin-top: -220px;
 }
 
 main {
@@ -81,16 +85,12 @@ ul {
   margin-right: auto;
 }
 
-.event-block{
+.event-block {
   min-width: 180px;
-  margin:0,3;
+  margin: 0, 3;
   position: relative;
   float: left;
 }
-
-/* #eventButton{
-  position: absolute;
-} */
 
 .eventDiv {
   padding: 20px;
@@ -121,9 +121,8 @@ ul {
   width: 100px;
 }
 
-
 @media screen and (max-width: 575px) {
-  body{
+  body {
     width: 100%;
   }
   .resBtn {
@@ -138,14 +137,12 @@ ul {
   }
   tbody, th, td {
     font-size: 7px;
-    margin:0px;
-    padding:0px;
+    margin: 0px;
+    padding: 0px;
   }
   #moreBtn {
     font-size: 5px;
     font-stretch: extra-expanded;
     display: inline-block;
   }
-
-
 }
