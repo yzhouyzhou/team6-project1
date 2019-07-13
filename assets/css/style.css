@@ -121,9 +121,12 @@ ul {
   width: 100px;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 575px) { 
   body {
     width: 100%;
+  }
+  .full-width-div {
+    margin-top: 0;
   }
   .resBtn {
     width: 20%;
