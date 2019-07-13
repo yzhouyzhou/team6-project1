@@ -2,7 +2,7 @@ body {
   /* background-image: linear-gradient(to bottom right, #b3ddf2, white, #f7797d); */
   /* color: white; */
         /* Location of the image */
-        background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255,255,255,.1)), url("../images/ikhsan-sugiarto-6CmfWqCNeIo-unsplash.jpg");
+        background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255,255,255,.1)), url("../images/wall-2093277_1920.jpg");
         /* Background image is centered vertically and horizontally at all times */
         background-position: center center;
         /* Background image doesn't tile */
@@ -58,7 +58,7 @@ footer {
 
 .linebreak {
   width: auto;
-  border: 15px solid #313fb9;
+  border: 15px solid #264758;
 }
 
 .eventofweek {
@@ -116,6 +116,9 @@ ul {
     width: 100%;
   }
   .resBtn {
+    width: 20%;
+  }
+  .eventButton {
     width: 20%;
   }
   .GoogleCalendar {
