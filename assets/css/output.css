@@ -19,9 +19,9 @@ body {
 
 div {
   position: relative;
-  width: 200px;
-  height: 200px;
-  line-height: 200px;
+  width: 30vw;
+  height: 30vw;
+  line-height: 30vw;
   text-align: center;
   color: #252B37;
   background-color: #151823;
@@ -74,15 +74,11 @@ div:after {
 
 /*# sourceMappingURL=output.css.map */
 
-@media screen and (min-width: 650px) {
+@media screen and (max-width: 550px) {
   div {
-    position: relative;
-    width: 30vw;
-    height: 30vw;
-    line-height: 30vw;
-    text-align: center;
-    color: #252B37;
-    background-color: #151823;
-    animation: textColor 10s ease infinite;
+    position: static;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
   }
 }
