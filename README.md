@@ -8,17 +8,18 @@
 
 
 *   MAIN WEB PAGE (index1.html)
-*       slideshow header --
-*       first link to our newsletter (if people want to sign up)
-*       next, we display the weather (using the Dark Sky API)
+*   slideshow header --
+*   first link to our newsletter (if people want to sign up)
+*   next, we display the weather (using the Dark Sky API)
     ![weather-image](assets/images/readme/weather.JPG)
-*       we have a static button that links to the weather.com site for people to view weather ahead of time instead of just    the current
-*       next, we display restaurants. 4 components: 
--   static buttons leading to opentable and resy for people to make reservations to their favorite places. 
--   "our teams" top picks for the week -- also static, but makes it personal + we place our reccommendations. 
+*   we have a static button that links to the weather.com site for people to view weather 
+    ahead of time instead of just the current
+*   next, we display restaurants. 4 components: 
+1.   static buttons leading to opentable and resy for people to make reservations to their favorite places. 
+2.   "our teams" top picks for the week -- also static, but makes it personal + we place our reccommendations. 
     Each restaurant also links to that main website. 
--   another static div that displays "this week's featured restaurant" -- again, for a personal touch and branding
--   restaurant search display (using YELP API) -- you search a cuisine and it displays the top 10 restaurants for that specific search 
+3.   another static div that displays "this week's featured restaurant" -- again, for a personal touch and branding
+4.   restaurant search display (using YELP API) -- you search a cuisine and it displays the top 10 restaurants for that specific search 
 ![restaurant-image](assets/images/readme/restaurant.JPG)
 
 *       next, we have our events display -- we are using the eventful API. 
@@ -29,7 +30,7 @@
 
 *       next, we have a few more static content -- just displaying "our teams monthly finds" around the city. 
         Each button links to that company's website -- personal touches and branding.
-*       THEN, we have our GOOGLE MAP API -- with multiple markers: they are pointed to main attractions in the city:
+*       THEN, we have our GOOGLE MAP API with markers: they are pointed to main attractions in the city:
     -   art institute, 
     -   willis tower, 
     -   chicago center, 
