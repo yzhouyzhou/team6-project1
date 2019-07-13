@@ -11,7 +11,7 @@
 *       slideshow header --
 *       first link to our newsletter (if people want to sign up)
 *       next, we display the weather (using the Dark Sky API)
-    ![weather-image](assets/images/readme/weather.JPG)
+![weather-image](assets/images/readme/weather.JPG)
 *   we have a static button that links to the weather.com site for people to view weather 
     ahead of time instead of just the current
 *   next, we display restaurants. 4 components: 
@@ -35,6 +35,7 @@
     -   willis tower, 
     -   chicago center, 
     -   navy pier
+![attractions-image](assets/images/readme/attractions.JPG)  
 *       THEN, using iframe, we have added a chicago summer calendar of events to display on our site. 
         You have the option to add the events to your google calendar too using the button.
 
