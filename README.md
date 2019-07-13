@@ -8,9 +8,9 @@
 
 
 *   MAIN WEB PAGE (index1.html)
-*   slideshow header --
-*   first link to our newsletter (if people want to sign up)
-*   next, we display the weather (using the Dark Sky API)
+*       slideshow header --
+*       first link to our newsletter (if people want to sign up)
+*       next, we display the weather (using the Dark Sky API)
     ![weather-image](assets/images/readme/weather.JPG)
 *   we have a static button that links to the weather.com site for people to view weather 
     ahead of time instead of just the current
