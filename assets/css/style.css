@@ -27,7 +27,6 @@ body {
 
 img {
   width: 400px;
-  min-height: 365px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -128,6 +127,9 @@ ul {
   }
   .full-width-div {
     margin-top: 18px;
+  }
+  .carousel-item {
+    min-height: 365px;
   }
   .resBtn {
     width: 20%;
