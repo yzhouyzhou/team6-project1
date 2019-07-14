@@ -27,6 +27,7 @@ body {
 
 img {
   width: 400px;
+  min-height: 365px;
   display: block;
   margin-left: auto;
   margin-right: auto;
