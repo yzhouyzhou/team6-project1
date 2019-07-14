@@ -32,6 +32,10 @@ img {
   margin-right: auto;
 }
 
+#imgIndexs {
+  min-height: 365px;
+}
+
 body {
   display: flex;
   min-height: 100vh;
@@ -127,9 +131,6 @@ ul {
   }
   .full-width-div {
     margin-top: 18px;
-  }
-  .carousel-item {
-    min-height: 365px;
   }
   .resBtn {
     width: 20%;
